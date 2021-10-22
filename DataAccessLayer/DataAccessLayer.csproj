@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Abstract\" />
+    <None Remove="Repository\" />
+    <None Remove="EntityFramework\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstract\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="EntityFramework\" />
+  </ItemGroup>
+</Project>

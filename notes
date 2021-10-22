@@ -1,0 +1,30 @@
+Katmanlı Mimari
+-Kod tekrarını önleme
+-DRY(Don't Repeat Yourself)
+-Projeye olan hakimiyet artar
+-Kod okunurluğu artar
+-Clean Code yapısı sağlanır
+-Hata yönetimi kolaylaşır
+
+N Tier Arc
+-Entity Layer         -> Class
+-Data Access Layer    -> CRUD
+-Business Layer       -> Validation
+-Presentation Layer   -> UI
+-Core Layer           
+-Api 
+
+CRUD
+-Create
+-Read
+-Update
+-Delete
+
+Generic Repository Mimarisi 
+-Her bir CRUD operasyonuna ait bir metot tanımlanacak
+-Metotların imzası olarak interfaceler kullanılacak
+-Abstract üzerinde soyut ifade olarak interfaceler tanımlanır
+ Concrete üzerinde ise somut ifade olarak interfaceler içinde yer alacak metotların içi doldurulur
+
+
+Generic -> Bütününe uygulanır
